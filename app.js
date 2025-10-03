@@ -1,4 +1,5 @@
 const content = document.getElementById("content");
+const basePath = "/FeisArchive";
 
 // load a page into <main> 
 async function loadPage(path) {
@@ -37,7 +38,7 @@ document.addEventListener("click", e => {
     e.preventDefault();
     // instead, load the page with the url in that link object 
     const url = link.getAttribute("href"); 
-    history.pushState(null, "", url); 
+    history.pushState(null, "", basePath + url);
     loadPage(url);
   }
 });
