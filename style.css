@@ -260,10 +260,13 @@ thead {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
     .paper {
         padding: 1.5rem;
         max-width: 100%;
+    }
+    .rasputin-embed {
+        display: none;
     }
 }
 
