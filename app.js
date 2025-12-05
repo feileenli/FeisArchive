@@ -7,7 +7,7 @@ async function loadPage(path) {
   let page = "pages/home.html";
 
   if (path === "/outfits") page = "pages/outfits.html";
-  if (path === "/writing") page = "pages/writing.html"; 
+  if (path === "/photos") page = "pages/photos.html"; 
 
   try {
     const res = await fetch(page);
